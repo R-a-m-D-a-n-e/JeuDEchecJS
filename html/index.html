@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Echec</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="back">
+
+
+        <div class="firsthelp" id="firsthelp"></div>
+        <div class="invisible" id="invisible"></div>
+        <div class="fin" id="fin"></div>
+        <div class="box tablechec" id="tablechec">
+            <div class="border bordern">¤</div>
+            <div class="border bordern">A</div>
+            <div class="border bordern">B</div>
+            <div class="border bordern">C</div>
+            <div class="border bordern">D</div>
+            <div class="border bordern">E</div>
+            <div class="border bordern">F</div>
+            <div class="border bordern">G</div>
+            <div class="border bordern">H</div>
+            <div class="border bordern">¤</div>
+            <div class="border bordern" value="zz" onclick="f(event)">8</div>
+            <div class="case n" id="18"><span>A8</span>
+            </div>
+            <div class="case b" id="28"><span>B8</span>
+            </div>
+            <div class="case n" id="38"><span>C8</span>
+            </div>
+            <div class="case b" id="48"><span>D8</span>
+            </div>
+            <div class="case n" id="58"><span>E8</span>
+            </div>
+            <div class="case b" id="68"><span>F8</span>
+            </div>
+            <div class="case n" id="78"><span>G8</span>
+            </div>
+            <div class="case b" id="88"><span>H8</span>
+            </div>
+            <div class="border borderb">8</div>
+            <div class="border bordern">7</div>
+            <div class="case b" id="17"><span>A7</span>
+            </div>
+            <div class="case n" id="27"><span>B7</span>
+            </div>
+            <div class="case b" id="37"><span>C7</span>
+            </div>
+            <div class="case n" id="47"><span>D7</span>
+            </div>
+            <div class="case b" id="57"><span>E7</span>
+            </div>
+            <div class="case n" id="67"><span>F7</span>
+            </div>
+            <div class="case b" id="77"><span>G7</span>
+            </div>
+            <div class="case n" id="87"><span>H7</span>
+            </div>
+            <div class="border borderb">7</div>
+            <div class="border bordern">6</div>
+            <div class="case n" id="16"><span>A6</span></div>
+            <div class="case b" id="26"><span>B6</span></div>
+            <div class="case n" id="36"><span>C6</span></div>
+            <div class="case b" id="46"><span>D6</span></div>
+            <div class="case n" id="56"><span>E6</span></div>
+            <div class="case b" id="66"><span>F6</span></div>
+            <div class="case n" id="76"><span>G6</span></div>
+            <div class="case b" id="86"><span>H6</span></div>
+            <div class="border borderb">6</div>
+            <div class="border bordern">5</div>
+            <div class="case b" id="15"><span>A5</span></div>
+            <div class="case n" id="25"><span>B5</span></div>
+            <div class="case b" id="35"><span>C5</span></div>
+            <div class="case n" id="45"><span>D5</span></div>
+            <div class="case b" id="55"><span>E5</span></div>
+            <div class="case n" id="65"><span>F5</span></div>
+            <div class="case b" id="75"><span>G5</span></div>
+            <div class="case n" id="85"><span>H5</span></div>
+            <div class="border borderb">5</div>
+            <div class="border bordern">4</div>
+            <div class="case n" id="14"><span>A4</span></div>
+            <div class="case b" id="24"><span>B4</span></div>
+            <div class="case n" id="34"><span>C4</span></div>
+            <div class="case b" id="44"><span>D4</span></div>
+            <div class="case n" id="54"><span>E4</span></div>
+            <div class="case b" id="64"><span>F4</span></div>
+            <div class="case n" id="74"><span>G4</span></div>
+            <div class="case b" id="84"><span>H4</span></div>
+            <div class="border borderb">4</div>
+            <div class="border bordern">3</div>
+            <div class="case b" id="13"><span>A3</span></div>
+            <div class="case n" id="23"><span>B3</span></div>
+            <div class="case b" id="33"><span>C3</span></div>
+            <div class="case n" id="43"><span>D3</span></div>
+            <div class="case b" id="53"><span>E3</span></div>
+            <div class="case n" id="63"><span>F3</span></div>
+            <div class="case b" id="73"><span>G3</span></div>
+            <div class="case n" id="83"><span>H3</span></div>
+            <div class="border borderb">3</div>
+            <div class="border bordern">2</div>
+            <div class="case n" id="12"><span>A2</span>
+            </div>
+            <div class="case b" id="22"><span>B2</span>
+            </div>
+            <div class="case n" id="32"><span>C2</span>
+            </div>
+            <div class="case b" id="42"><span>D2</span>
+            </div>
+            <div class="case n" id="52"><span>E2</span>
+            </div>
+            <div class="case b" id="62"><span>F2</span>
+            </div>
+            <div class="case n" id="72"><span>G2</span>
+            </div>
+            <div class="case b" id="82"><span>H2</span>
+            </div>
+            <div class="border borderb">2</div>
+            <div class="border bordern">1</div>
+            <div class="case b" id="11"><span>A1</span>
+            </div>
+            <div class="case n" id="21"><span>B1</span>
+            </div>
+            <div class="case b" id="31"><span>C1</span>
+            </div>
+            <div class="case n" id="41"><span>D1</span>
+            </div>
+            <div class="case b" id="51"><span>E1</span>
+            </div>
+            <div class="case n" id="61"><span>F1</span>
+            </div>
+            <div class="case b" id="71"><span>G1</span>
+            </div>
+            <div class="case n" id="81"><span>H1</span>
+            </div>
+            <div class="border borderb">1</div>
+            <div class="border borderb">¤</div>
+            <div class="border borderb">A</div>
+            <div class="border borderb">B</div>
+            <div class="border borderb">C</div>
+            <div class="border borderb">D</div>
+            <div class="border borderb">E</div>
+            <div class="border borderb">F</div>
+            <div class="border borderb">G</div>
+            <div class="border borderb">H</div>
+            <div class="border borderb">¤</div>
+
+
+        </div>
+        <div class="containerGamer">
+            <div class="mainGamer" id="mainGamer">
+                <div class="box dead" id="joueur0">
+                    <div class="nameJoueur" id="j0">JOUEUR 0</div>
+                    <div class="space" id="space0"></div>
+                    <div class="tab" id="tab0">
+                        <div class="deadCase" id="11"></div>
+                        <div class="deadCase" id="12"></div>
+                        <div class="deadCase" id="13"></div>
+                        <div class="deadCase" id="14"></div>
+                        <div class="deadCase" id="15"></div>
+                        <div class="deadCase" id="16"></div>
+                        <div class="deadCase" id="17"></div>
+                        <div class="deadCase" id="18"></div>
+                        <div class="deadCase" id="21"></div>
+                        <div class="deadCase" id="22"></div>
+                        <div class="deadCase" id="23"></div>
+                        <div class="deadCase" id="24"></div>
+                        <div class="deadCase" id="25"></div>
+                        <div class="deadCase" id="26"></div>
+                        <div class="deadCase" id="27"></div>
+                        <!-- <div class="deadCase" id="28"></div> -->
+                    </div>
+                </div>
+
+                <div class="box dead" id="joueur1">
+                    <div class="nameJoueur" id="j1">J</div>
+                    <div class="space" id="space1"></div>
+                    <div class="tab" id="tab1">
+                        <div class="deadCase" id="11"></div>
+                        <div class="deadCase" id="12"></div>
+                        <div class="deadCase" id="13"></div>
+                        <div class="deadCase" id="14"></div>
+                        <div class="deadCase" id="15"></div>
+                        <div class="deadCase" id="16"></div>
+                        <div class="deadCase" id="17"></div>
+                        <div class="deadCase" id="18"></div>
+                        <div class="deadCase" id="21"></div>
+                        <div class="deadCase" id="22"></div>
+                        <div class="deadCase" id="23"></div>
+                        <div class="deadCase" id="24"></div>
+                        <div class="deadCase" id="25"></div>
+                        <div class="deadCase" id="26"></div>
+                        <div class="deadCase" id="27"></div>
+                        <!-- <div class="deadCase" id="28"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/script.js"></script>
+</body>
+
+</html>
